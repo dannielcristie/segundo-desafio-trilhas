@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #F6F6F6;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #1C0CEA;
+
+    --cor-cabecalho: #EA331A;
+
+    --cor-hover: #dad6d6;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    background-color: var(--cor-cabecalho);
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0% 2% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80%;
+
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    margin-left: auto;
+}
+
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo__titulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo__subtitulo {
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.conteudo__texto {
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.principal__formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 1.1rem;
+    font-family: var(--fonte-secundaria);
+
+}
+
+label {
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="date"] {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.principal__formulario__campos {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.principal__formulario__campos__campo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 2px;
+}
+
+.principal__formulario__campos__anexos {
+    border: none;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    gap: 2%;
+}
+
+.principal__formulario__campos__botoes {
+    border: none;
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+}
+
+.principal__formulario__campos__botao{
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+button:hover{
+    background-color: var(--cor-hover);
+}
+
+#cancelar{
+    text-decoration: none;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+
+.imagem {
+    width: 50%;
+}
+
+
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo {
+        width: auto;
+    }
+
+}

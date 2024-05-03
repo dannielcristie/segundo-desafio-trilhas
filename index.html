@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilhas Inova MA</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="home.html">Pagina Inicial</a>
+            <a class="cabecalho__menu__link" href="index.html">Incrição</a>
+            <a class="cabecalho__menu__link" href="login.html">Login</a> 
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="conteudo">
+            <h1 class="conteudo__titulo">
+                Inscreva-se no Programa <strong class="titulo-destaque">Trilhas Inova Maranhão</strong>
+            </h1>
+
+            <form action="" class="principal__formulario">
+                <fieldset class="principal__formulario__campos">
+                    <div class="principal__formulario__campos__campo">
+                        <label for="">Nome completo: </label>
+                        <input type="text" name="nome-completo" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <label for="">Data de Nascimento: </label>
+                        <input type="date" name="data-de-nascimento" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <label for="">Genero: </label>
+                        <select name="genero" required>
+                            <option selected disabled value=""> Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label>Rg: </Label>
+                        <input type="text" name="rg" placeholder="Apenas numeros" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label>CPF: </Label>
+                        <input type="text" name="cpf" placeholder="000.000.000-00" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label>Telefone: </Label>
+                        <input type="text" name="telefone" placeholder="(00)00000-0000" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="principal__formulario__campos">
+                    <div class="principal__formulario__campos__campo">
+                        <Label>Email: </Label>
+                        <input type="email" name="email" placeholder="mail@email.com" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label>Confimar email: </Label>
+                        <input type="email" name="confimar-email" placeholder="mail@email.com" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="principal__formulario__campos">
+                    <div class="principal__formulario__campos__campo">
+                        <Label>Rua: </Label>
+                        <input type="text" name="rua" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label> Numero : </Label>
+                        <input type="text" name="numero-casa" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label> Bairro : </Label>
+                        <input type="text" name="bairro" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label> CEP : </Label>
+                        <input type="text" name="cep" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label> Cidade : </Label>
+                        <input type="text" name="cidade" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label> Estado : </Label>
+                        <input type="text" name="estado" required>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <Label> Complemento : </Label>
+                        <input type="text" name="complemento">
+                    </div>
+                </fieldset>
+
+                <fieldset class="principal__formulario__campos">
+                    <div class="principal__formulario__campos__campo">
+                        <label> Escolaridade: </label>
+                        <select name="escolaridade" required>
+                            <option selected disabled value=""> Selecione</option>
+                            <option value="ensino-medio-completo">Ensino Medio Completo</option>
+                            <option value="ensino-medio-incompleto">Ensino Medio Incompleto</option>
+                            <option value="ensino-superior-completo">Ensino Superior Completo</option>
+                            <option value="ensino-superior-incompleto">Ensino Superior Incompleto</option>
+                        </select>
+                    </div>
+
+                    <div class="principal__formulario__campos__campo">
+                        <label>Instituição</label>
+                        <input type="text" name="Instituicao-ensino" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="principal__formulario__campos">
+                    <div class="principal__formulario__campos__campo">
+                        <label> Area de interresse:</label>
+                        <select name="area-de-interresse" required>
+                            <option selected disabled value=""> Selecione</option>
+                            <option value="frontend">Programação - Front-end</option>
+                            <option value="Backend">Programação - Back-end</option>
+                            <option value="prog-jogos">Programação - Jogos</option>
+                            <option value="ciencia-dados">Ciência de dados</option>
+                            <option value="design">Design</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="principal__formulario__campos__anexos">
+
+                    <div class="principal__formulario__campos__campo">
+                        <label>Comprovante de Residencia: </label>
+                        <input type="file" name="compro-residencia">
+                    </div>
+                </fieldset>
+
+                <fieldset class="principal__formulario__campos__botoes">
+                    <div class="principal__formulario__campos__campo">
+                        <button class="principal__formulario__campos__botao" type="submit">
+                            Enviar
+                        </button>
+                    </div>
+
+                    <div class="principal__formulario__campos__botao">
+                        <a id="cancelar" href="/home.html">Cancelar</a>
+                    </div>
+                </fieldset>
+
+            </form>
+        </section>
+        <img class="imagem" src="/assets/logo.png" alt="logo trilhas">
+
+    </main>
+    <footer class="rodape">
+        <img src="assets/govLogo.png" alt="logo do governo do maranhao">
+    </footer>
+</body>
+
+</html>
